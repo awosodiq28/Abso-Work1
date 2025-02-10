@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;1,900&display=swap');
+.buttonx{
+    padding: .485rem .95rem;
+    background-color: #007bff;
+    font-size: 1rem;   
+    border: 1px solid transparent;
+    border-color: #007bff;
+    border-radius: .25rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.alignment{
+    text-align: center;
+}
+.settings{
+    display: flex;
+    justify-content:flex-end;
+}
+.homesettings{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.homesettings h3{
+     font-size:25px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    
+}
+.homesettings h6{
+    color: #6c757d;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+.homesettings h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #6c757d;
+    margin-bottom: 50px;
+
+}
+.homesettings h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #6c757d;
+    margin-top:50px;
+}
+.homesettings ul li{
+ font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #6c757d;
+}
+.buttonx a{
+  color: white;
+}
+.challenge{
+    font-size: 80px;
+   color:red;
+}
+.buttonx a:hover{
+    color: whitesmoke;
+   text-decoration: none;
+}
+
+.buttonLink {
+    padding: .485rem .95rem;
+    background-color: #007bff;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-color: #007bff;
+    border-radius: .25rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttonLink:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
