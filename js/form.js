@@ -47,5 +47,5 @@ return
 }
 submitExample.disabled = false
 exampleForm.reset();
-window.location.href("/absotech.html")
+location.href = "/error.html"
 })
